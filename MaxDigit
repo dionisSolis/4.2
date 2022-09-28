@@ -18,18 +18,7 @@ namespace digits
                 array.Add(random.Next(10000));
                 Console.Write(array[i] + " ");
             }
-
-            Console.WriteLine("\n\nВведите индекс максимального элемент массива");
-            maxDigitIndex = int.Parse(Console.ReadLine());
-
-            if (maxDigitIndex == array.IndexOf(array.Max()))
-            {
-                Console.WriteLine($"\nВерно! Максимальный элемент в массиве {array.Max()}, его индекс {array.IndexOf(array.Max())}");
-            }
-            else
-            {
-                Console.WriteLine($"\nНеверно! Максимальный элемент в массиве {array.Max()}, его индекс {array.IndexOf(array.Max())}");
-            }
+            Console.WriteLine($"\n\nМаксимальный элемент в массиве {array.Max()}, его индекс {array.IndexOf(array.Max())}");
         }
     }
 }
