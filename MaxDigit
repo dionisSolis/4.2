@@ -6,25 +6,25 @@ namespace digits
         static void Main(string[] args)
         {
             int arrayLength;
-            int maxDigit, maxDigitIndex;
+            int maxDigitIndex;
             List<int> array = new List<int> { };
-            Random random = new Random();   
+            Random random = new Random();
 
             Console.Write("Введите длину массива ");
             arrayLength = int.Parse(Console.ReadLine());
-            
+
             for (int i = 0; i < arrayLength; i++)
             {
                 array.Add(random.Next(10000));
                 Console.Write(array[i] + " ");
             }
 
-            Console.WriteLine("\n\nВведите максимальный элемент массива");
-            maxDigit = int.Parse(Console.ReadLine());
-            
+            Console.WriteLine("\n\nВведите индекс максимального элемент массива");
+            maxDigitIndex = int.Parse(Console.ReadLine());
+
             if (maxDigitIndex == array.IndexOf(array.Max()))
             {
-                Console.WriteLine("\nВерно!");
+                Console.WriteLine($"\nВерно! Максимальный элемент в массиве {array.Max()}, его индекс {array.IndexOf(array.Max())}");
             }
             else
             {
