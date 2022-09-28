@@ -18,6 +18,7 @@ namespace digits
                 array.Add(random.Next(10000));
                 Console.Write(array[i] + " ");
             }
+            
             Console.WriteLine($"\n\nМаксимальный элемент в массиве {array.Max()}, его индекс {array.IndexOf(array.Max())}");
         }
     }
