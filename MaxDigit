@@ -21,10 +21,8 @@ namespace digits
 
             Console.WriteLine("\n\nВведите максимальный элемент массива");
             maxDigit = int.Parse(Console.ReadLine());
-            Console.WriteLine("Введите индекс максимального элемента");
-            maxDigitIndex = int.Parse(Console.ReadLine());
-
-            if (maxDigit == array.Max() && maxDigitIndex == array.IndexOf(array.Max()))
+            
+            if (maxDigitIndex == array.IndexOf(array.Max()))
             {
                 Console.WriteLine("\nВерно!");
             }
